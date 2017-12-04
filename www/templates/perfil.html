@@ -1,0 +1,48 @@
+<ion-header-bar align-title="left" class="bar bar-theme">
+  <button class="button button-icon icon ion-android-arrow-back"style="color: #fff" ng-click="goBack()">Voltar</button>
+  <button class="button button-clear icon ion-navicon-round" style="color: #fff" ui-sref="menuPrincipal">Menu</button>
+</ion-header-bar>
+
+<ion-view view-title="Details">
+  <ion-content class="details_content padding animated fadeIn">
+
+          <div class="det-img" style="background: url({{core.foto}})no-repeat; background-size: cover"></div>
+          <!-- <h3>Raphael Vizoni do Prado</h3>-->
+          <h3>{{core.nome}}</h3>
+          <!-- <h5 class="icon ion-university"> Cardiologista</h5> -->
+          <h5 class="icon ion-university" ng-if="core.tipo <= 2">{{core.nome_especialidade}}</h5>
+          <!-- <p>Lorem ipsum dolor sit amet, consectetur adicing elit, sed do eiusmod tempor incididunt ut labore. et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
+          <p>{{core.bio}}</p>
+
+          <h3 class="share main-text-color">Planos aceitos</h3>
+          <h6 class="share_icon">
+              <div style="margin-left: 5%">
+                <!-- <h5 class="icon ion-checkmark"> Plano A</h5>
+                <h5 class="icon ion-checkmark"> Plano A</h5>
+                <h5 class="icon ion-checkmark"> Plano A</h5> -->
+                <h5 class="icon ion-checkmark" ng-repeat="plano in core.planos_aceitos"> {{plano}}</h5>
+              </div>
+          </h6>
+
+          <div class="line"></div>
+          <h3 class="share main-text-color">Telefone:</h3>
+          <h6 class="share_icon">
+              <div style="margin-left: 5%">
+                <!-- <h4 class="icon ion-ios-telephone"> (44) 1234-5678</h4>
+                <h4 class="icon ion-android-phone-portrait"> (44) 1234-5678</h4> -->
+                <h4 class="icon ion-ios-telephone"> {{core.tel_comercial}}</h4>
+                <h4 class="icon ion-android-phone-portrait" ng-if="core.tel_particular.length > 0"> {{core.tel_particular}}</h4>
+              </div>
+          </h6>
+          <h3 class="share main-text-color">Endereço:</h3>
+          <h6 class="share_icon">
+              <div style="margin-left: 5%">
+                <!-- <h4 class="icon ion-ios-location"> Avenida Brasil, 403, segundo piso</h4> -->
+                <h4 class="icon ion-ios-location">{{core.endereco}}</h4>
+              </div>
+          </h6>
+
+          <div id="vizoniMap" style="height: 300px"></div>
+
+  </ion-content>
+</ion-view>

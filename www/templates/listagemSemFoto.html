@@ -1,0 +1,21 @@
+<ion-header-bar align-title="left" class="bar bar-theme">
+  <div class="buttons">
+    <button class="button button-icon icon ion-android-arrow-back" style="color: #fff" ng-click="goBack()"> Voltar</button>
+  </div>
+  <input class="icon ion-search" ng-model="itemPesquisado.nome" style="border-radius: 10px; width: 60%" placeholder="   Pesquisar Especialidade">
+  <button class="icon ion-search" style="color: #fff; background-color: transparent; border-color: transparent"></button>
+</ion-header-bar>
+
+
+<ion-view view-title="">
+  <ion-content class="home_content text-center" scroll="true">
+    <ion-list>
+      <ion-item ng-repeat="item in itemsListaArray | filter: itemPesquisado" class="item"
+                ui-sref="listagemCore({ coreTipo: {{coreTipo}} , especialidadeTipo: {{item.id}} })">
+        <h2 style="float: left">{{item.nome}}</h2>
+        <i class="ion-arrow-right-c" style="float: right"></i>
+      </ion-item>
+    </ion-list>
+
+  </ion-content>
+</ion-view>

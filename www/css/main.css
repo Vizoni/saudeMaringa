@@ -1,0 +1,36 @@
+.header-topo {
+  background-color: #3fca56;
+}
+
+.back-button-header {
+  color: #ffffff;
+}
+
+.bar-theme {
+  border-color: #9bc933;
+  background-color: #9bc933 ;
+}
+
+.menu-medico-topo {
+  width: 95% !important;
+  padding: 0px !important;
+  background-color: #f75050 !important;
+  border-color: #ffffff;
+  border-width: 2px;
+  border-style: solid;
+  margin-bottom: 0px;
+}
+
+.menu-xadrez-claro {
+  background-color: #fff !important;
+  border-color: #9bc933;
+  border-width: 2px;
+  border-style: solid;
+}
+
+.menu-xadrez-escuro {
+  background-color: #9bc933 !important;
+  border-color: #ffffff;
+  border-width: 2px;
+  border-style: solid;
+}

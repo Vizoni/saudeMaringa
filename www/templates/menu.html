@@ -1,0 +1,120 @@
+<ion-view view-title="Menu Principal">
+  <ion-content class="home_content text-center" scroll="true" style="background-color: #deded5">
+
+        <!-- BACKUP -->
+        <!-- <div ng-repeat="item in menuItems" class="home_grid" ng-click="activeItem($index)" ui-sref="{{item.link}}"
+            ng-class="{'color-item main-bg-color':activeIcon==$index}"> -->
+        <!-- BACKUP -->
+        <!-- <div ng-repeat="item in menuItems" class="home_grid" ng-click="activeItem($index)" ui-sref="{{item.link}}"
+        ng-class="{'menu-medico-topo': $index == 0}" ng-class-odd="menu-xadrez-escuro" ng-class-even="menu-xadrez-claro"
+        value="{{$index}}" style="margin-left: 2%">
+            <img src="{{item.img}}" style="margin-top: 12px">
+            <h4 style="font-size: 22px !important; color: #fff">{{item.name}}</h4>
+        </div> -->
+
+        <!--  LISTAGEM DOS TIPOS DE CORE:
+         1 - Médico
+         2 - Dentista
+         3 - Clínica
+         4 - Farmácia
+         5 - Fisioterapeuta
+         6 - Fonoaudiólogo
+         7 - Psicólogo
+         8 - Pilates
+
+         EXAMES NÃO ESTÁ INCLUÍDO EM CORE!!
+        -->
+
+
+        <!-- <div class="home_grid menu-medico-topo" ng-click="activeItem($index)" ui-sref="especialidades({ coreTipo: 1 })">
+            <img src="img/08.png" style="margin-top: 12px">
+            <h4 style="font-size: 22px !important; color: #fff">Médicos</h4>
+        </div>
+
+        <div class="home_grid menu-xadrez-escuro" ng-click="activeItem($index)" ui-sref="especialidades({ coreTipo: 2 })">
+            <img src="img/06.png">
+            <h4 style="font-size: 22px !important; color: #fff">Dentistas</h4>
+        </div>
+
+        <div class="home_grid menu-xadrez-claro" ng-click="activeItem($index)" ui-sref="abcdefg">
+            <img src="img/02.png">
+            <h4 style="font-size: 22px !important">Exames</h4>
+        </div>
+
+        <div class="home_grid menu-xadrez-claro" ng-click="activeItem($index)" ui-sref="listagemCore({ coreTipo: 3 })">
+            <img src="img/04.png">
+            <h4 style="font-size: 22px !important">Clínicas</h4>
+        </div>
+
+        <div class="home_grid menu-xadrez-escuro" ng-click="activeItem($index)" ui-sref="listagemCore({ coreTipo: 4 })">
+            <img src="img/icon02.png">
+            <h4 style="font-size: 22px !important; color: #fff">Farmácias</h4>
+        </div>
+
+        <div class="home_grid menu-xadrez-escuro" ng-click="activeItem($index)" ui-sref="listagemCore({ coreTipo: 5 })">
+            <img src="img/icon03.png">
+            <h4 style="font-size: 22px !important; color: #fff">Fisioterapeutas</h4>
+        </div>
+
+        <div class="home_grid menu-xadrez-claro" ng-click="activeItem($index)" ui-sref="listagemCore({ coreTipo: 6 })">
+            <img src="img/06.png">
+            <h4 style="font-size: 22px !important">Fonoaudiólogos</h4>
+        </div>
+
+        <div class="home_grid menu-xadrez-claro" ng-click="activeItem($index)" ui-sref="listagemCore({ coreTipo: 7 })">
+            <img src="img/icon04.png">
+            <h4 style="font-size: 22px !important">Psicólogos</h4>
+        </div>
+
+        <div class="home_grid menu-xadrez-escuro" ng-click="activeItem($index)" ui-sref="listagemCore({ coreTipo: 8 })">
+            <img src="img/03.png">
+            <h4 style="font-size: 22px !important; color: #fff">Pilates</h4>
+        </div> -->
+
+        <div class="home_grid menu-medico-topo" style="background-color: #9bc933 !important" ng-click="activeItem($index)" ui-sref="especialidades({ coreTipo: 1 })">
+            <img src="img/08.png" style="margin-top: 12px">
+            <h4 style="font-size: 22px !important; color: #fff">Médicos</h4>
+        </div>
+
+        <div class="home_grid menu-xadrez-claro" ng-click="activeItem($index)" ui-sref="especialidades({ coreTipo: 2 })">
+            <img src="img/06.png">
+            <h4 style="font-size: 22px !important; color: #9bc933">Dentistas</h4>
+        </div>
+
+        <div class="home_grid menu-xadrez-claro" ng-click="activeItem($index)" ui-sref="listagemExame({ coreTipo: 3})">
+            <img src="img/02.png">
+            <h4 style="font-size: 22px !important; color: #9bc933">Exames</h4>
+        </div>
+
+        <div class="home_grid menu-xadrez-claro" ng-click="activeItem($index)" ui-sref="listagemCore({ coreTipo: 3 })">
+            <img src="img/04.png">
+            <h4 style="font-size: 22px !important; color: #9bc933">Clínicas</h4>
+        </div>
+
+        <div class="home_grid menu-xadrez-claro" ng-click="activeItem($index)" ui-sref="listagemCore({ coreTipo: 4 })">
+            <img src="img/icon02.png">
+            <h4 style="font-size: 22px !important; color: #9bc933">Farmácias</h4>
+        </div>
+
+        <div class="home_grid menu-xadrez-claro" ng-click="activeItem($index)" ui-sref="listagemCore({ coreTipo: 5 })">
+            <img src="img/icon03.png">
+            <h4 style="font-size: 22px !important; color: #9bc933">Fisioterapeutas</h4>
+        </div>
+
+        <div class="home_grid menu-xadrez-claro" ng-click="activeItem($index)" ui-sref="listagemCore({ coreTipo: 6 })">
+            <img src="img/06.png">
+            <h4 style="font-size: 22px !important; color: #9bc933">Fonoaudiólogos</h4>
+        </div>
+
+        <div class="home_grid menu-xadrez-claro" ng-click="activeItem($index)" ui-sref="listagemCore({ coreTipo: 7 })">
+            <img src="img/icon04.png">
+            <h4 style="font-size: 22px !important; color: #9bc933">Psicólogos</h4>
+        </div>
+
+        <div class="home_grid menu-xadrez-claro" ng-click="activeItem($index)" ui-sref="listagemCore({ coreTipo: 8 })">
+            <img src="img/03.png">
+            <h4 style="font-size: 22px !important; color: #9bc933">Pilates</h4>
+        </div>
+
+  </ion-content>
+</ion-view>

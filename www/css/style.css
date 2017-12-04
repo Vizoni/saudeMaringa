@@ -1,0 +1,438 @@
+/* Empty. Add your own CSS if you like */
+/******** main color ********/
+.main-bg-color , .bar.bar-stable{
+    background: #9bc933 !important
+}
+.main-text-color , .slider-pager .slider-pager-page.active{
+    color: #9bc933 !important
+}
+
+.sec-main-bg-color{
+    background: #3b3b3b !important
+}
+/******** main color ********/
+
+.main-btn.button.button-block{
+    border: none;
+    color: #fff
+}
+h4{
+    font-size: 16px !important;
+    font-weight: normal;
+    margin: 0
+}
+h5{
+    margin-top: 0
+}
+/*************** login page ***************/  /*************** register page ***************/
+
+.logo{
+    margin-top: 40px
+}
+.logo img{
+    width:180px
+}
+.app_form{
+    margin-top: 35px
+}
+.app_form h4{
+    margin-bottom: 40px
+}
+.app_form .button.button-block{
+    margin-top: 0;
+}
+.app_form .item-input{
+    margin-bottom: 10px;
+    min-height: 55px;
+    border: 1px solid darkgray;
+    padding: 8px 8px 8px 16px
+}
+.button.activated{
+    background-color: #3b3b3b
+}
+.popup-head{
+    border-bottom: 1px solid #3b3b3b
+}
+.skip_btn.button {
+    border: none;
+    background: none;
+    color: black
+}
+.login_content.scroll-content{
+    margin-top: 0;
+    padding-top: 0
+}
+
+/*************** header ***************/
+
+.bar-stable .button.button-clear.back_btn{
+    font-size: 25px;
+    height: 50px;
+    min-height: 50px;
+    margin: 0;
+    padding: 0;
+    line-height: 50px;
+    width: 35px;
+    position: absolute;
+    right: 0
+}
+.bar.bar-stable{
+    height: 60px;
+    background: none;
+    border: none !important;
+}
+/*.has-header{
+    top:60px;
+}*/
+.bar.bar-stable .title{
+    color: #fff;
+    height: 60px;
+    line-height: 60px;
+}
+.bar-stable .button.button-clear{
+    color: #fff;
+    padding-top: 7px;
+}
+/*************** home page ***************/
+.home_head{
+    width: 100%;
+    /*height: 60%*/
+    height: 40%
+}
+.slider{
+    width: 100%;
+    height: 100%
+}
+.slider-pager .slider-pager-page{
+    color: white;
+    opacity: 1;
+    margin: 0
+}
+.slider-pager .slider-pager-page i{
+    font-size: 12px
+}
+.home_content .scroll{
+    height: 100%
+}
+.home_grid img{
+    /*height: 34px;*/
+    height: 60px;
+    margin-top: 7%
+}
+@media (min-width: 400px){
+    .home_grid img{
+        margin-top: 10%
+    }
+}
+@media (min-width: 680px){
+    .home_grid img{
+        margin-top: 14%
+    }
+}
+.home_grid h4{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #333f4f;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+.home_grid{
+    /*height: 20%;*/
+    height: 18%;
+    /*width: 50%;*/
+    width: 46%;
+    float: left;
+    padding:0px 0px 5px 0px;
+    margin: 5px 0px 3px 8px;
+}
+
+/*.home_grid:nth-child(2),.home_grid:nth-child(5) {
+    background: #d8d8d8;
+}*/
+.home_grid:nth-child(1),.home_grid:nth-child(4),.home_grid:nth-child(5),.home_grid:nth-child(8) {
+    /*background: #d8d8d8;*/
+    background: #9bc933;
+}
+.home_grid.color-item h4{
+    color: #fff
+}
+input::-webkit-input-placeholder ,.item-input textarea::-webkit-input-placeholder{
+    color: #7d7e7e;
+}
+.placeholder-icon{
+    color: #7d7e7e;
+}
+/*************** menu page ***************/
+.menu_head .bar.bar-stable{
+    height: 113px;
+    background: #2a282c;
+}
+.menu_head img{
+   width: 150px;
+    height: 68px;
+    margin: 23px auto
+}
+.menu_content.has-header{
+    top: 113px;
+    background: #2a282c;
+}
+.menu_content .item-complex .item-content{
+    background: transparent;
+}
+.menu_content .item{
+    border: none;
+    background: none;
+    color: #fff;
+    padding-left: 25px;
+}
+.menu_content .item i{
+    margin-right: 8px;
+}
+.menu_content .list{
+    margin-top: 30px;
+}
+.menu_content .item.color-item2 i{
+    color: white !important
+}
+/*************** services page ***************/
+.services_content{
+    margin: 0;
+    padding: 0
+}
+.services_content .scroll{
+    height: 100%
+}
+.services_content .list{
+   display: inline-block;
+    width: 100%;
+   height: 100%;
+   padding: 0
+}
+.cat .item{
+    width: 50%;
+    height: 20%;
+    float: left;
+    margin: 0;
+    border: none;
+    text-align: center;
+    background: #fff
+}
+.cat .item:first-child, .cat .item:nth-child(4), .cat .item:nth-child(5), .cat .item:nth-child(8), .cat .item:nth-child(9){
+
+    background: #ebebeb
+}
+.services_content .item-complex .item-content{
+    height: 100%;
+    padding:0 16px;
+    background: none
+}
+.services_content .item-complex .item-content > h4{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    min-height: 25px
+}
+.cat img{
+    height: 36px;
+    margin-top: 17%
+
+}
+.item-content.activated{
+    border: none !important;
+    background: none !important
+}
+/*************** laboratory page ***************/
+
+.list_img{
+    height: 190px
+}
+.collection_det{
+    margin: 10px
+}
+.det_list{
+    height: 68px;
+    margin: 6px 0
+}
+.det_list h4{
+    margin: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+.det_list p{
+    overflow: hidden;
+    max-height: 44px;
+    margin: 0;
+    color: #acacac
+}
+.laboratory_content a{
+    text-decoration: none;
+}
+/*************** doctors page ***************/
+.doc_row{
+    margin: 2px 10px;
+}
+.doctors_content .row{
+    height: 106px;
+}
+.doc_row .col-33{
+    height: 90px;
+}
+.doctor-img{
+    width: 100%;
+    height: 80px
+}
+.doctors_content p{
+    margin: 0;
+    overflow: hidden;
+    max-height: 37px;
+    color: #a3a3a3;
+}
+.doctors_content h4{
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+.doctors_content a{
+    text-decoration: none
+}
+.doctors_content a:first-child{
+    padding-top: 6px;
+}
+/*************** details page ***************/
+.details_content h4{
+    color: #333f4f;
+    font-weight:700;
+    margin-top: 7px;
+    margin-bottom: 6px
+}
+.details_content h5{
+    color: #3b3b3b;
+}
+.details_content p{
+    /*color: #969696;*/
+    color: #636060;
+}
+.share{
+    font-size: 19px;
+    font-weight: 600;
+    margin-bottom: 17px
+}
+.det_icon{
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 8px;
+    background: #494949;
+    display: inline-block;
+    text-align: center;
+    font-size: 23px;
+    margin-right: 5px
+}
+.share_icon{
+    margin-bottom: 30px;
+}
+.line{
+    border-bottom: 1px solid #494949;
+}
+.comments{
+    max-height: 140px;
+    padding: 0;
+    padding-bottom: 10px
+}
+.comments img{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+}
+.comments h4{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin: 0;
+    font-weight: normal
+}
+.comments h5{
+    margin-bottom: 5px;
+    margin-top: 0;
+    color: #ffb400;
+    font-size: 12px
+}
+.comments p{
+    overflow: hidden;
+    max-height: 59px;
+    margin: 0;
+}
+.comment-img{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    margin: 0 auto;
+    background: url(../img/12.png)no-repeat;
+    background-size: cover
+}
+.login_label .your_comment textarea{
+    padding-top: 12px;
+    color: #969696;
+}
+.login_label span {
+    color: #969696;
+}
+.det-img{
+    width: 100%;
+    height: 226px;
+    background: url(../img/2.png)no-repeat;
+    background-size: cover
+}
+/*.det-img{
+    width: 100%;
+    height: 226px;
+    background: url(../img/details-img.png)no-repeat;
+    background-size: cover
+}*/
+/*************** contact-us page ***************/
+.placeholder-icon:last-child{
+    padding-left: 0
+}
+.contact_us_content.padding{
+    padding: 15px
+}
+.contact_head {
+    text-align: center;
+    margin-top: 50px;
+}
+.contact_head .span1{
+    color: #fff;
+    display: inline-block;
+    padding: 5px;
+    font-size: 17px;
+    font-weight: bold;
+}
+.contact_head h4{
+    margin-top: 5px;
+    margin-bottom: 5px
+}
+/*************** about-us page ***************/
+.about_content p{
+    margin: 33px 15px 33px
+}
+
+/*************** IOS ***************/
+.platform-ios.platform-cordova:not(.fullscreen) .bar-header:not(.bar-subheader){
+    height: 80px
+}
+.platform-ios.platform-cordova:not(.fullscreen) .has-header{
+    top: 80px
+}
+.platform-ios.platform-cordova:not(.fullscreen) .menu_head .bar.bar-stable.bar-header:not(.bar-subheader){
+    height: 123px
+}
+.platform-ios.platform-cordova:not(.fullscreen) .menu_content.has-header{
+    top: 123px
+}
+.platform-ios.platform-cordova:not(.fullscreen) .menu_head .bar.bar-stable.bar-header:not(.bar-subheader) > *{
+    margin-top: 23px
+}

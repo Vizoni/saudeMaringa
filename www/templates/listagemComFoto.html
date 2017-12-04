@@ -1,0 +1,33 @@
+<ion-header-bar align-title="left" class="bar bar-theme">
+  <button class="button button-icon icon ion-android-arrow-back"style="color: #fff" ng-click="goBack()">Voltar</button>
+  <button class="button button-clear icon ion-navicon-round" style="color: #fff" ui-sref="menuPrincipal">Menu</button>
+</ion-header-bar>
+
+<ion-view view-title="Doctors">
+  <ion-content class="doctors_content">
+
+    <!-- <a ui-sref="perfil({id: core.id})" collection-repeat="core in listaCoreArray" -->
+    <!-- <a ui-sref="perfil({id: {{core.id}}, id_tipo: {{core.id_tipo}} })" collection-repeat="core in listaCoreArray"
+    collection-item-width="100%"
+    collection-item-height="108" > -->
+    <a ui-sref="perfil({id_tipo: {{core.id_tipo}}, id: {{core.id}} })" ng-repeat="core in listaCoreArray"
+    collection-item-width="100%"
+    collection-item-height="108" >
+    <!-- <h4>{{core.id_tipo}} = {{core.id}}</h4> -->
+      <div class="doc_row animated zoomIn">
+          <div class="row">
+            <div class="col col-33">
+                  <div class="doctor-img" style="background:url({{core.foto}})no-repeat;background-size:cover"></div>
+            </div>
+            <div class="col col-67">
+                    <h4 class="main-text-color">{{core.nome}}</h4>
+                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adicing elit, sed do eiusmod tempor incididunt ut labore. et dolore magna aliqua.</p> -->
+                    <!-- <p style="text-overflow: hidden">{{core.bio}}</p> -->
+                    <p style="text-overflow: hidden">{{ adicionarReticenciasBioDoCore(core.bio) }}</p>
+            </div>
+         </div>
+       </div>
+    </a>
+
+  </ion-content>
+</ion-view>
